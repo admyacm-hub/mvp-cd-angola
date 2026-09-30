@@ -1,0 +1,38 @@
+{
+  "name": "mvp-cd-angola",
+  "version": "1.0.0",
+  "description": "MVP de Corretora Digital e Distribuidora de Valores Mobiliários (SDVM) para o mercado angolano (BODIVA)",
+  "main": "src/server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "test": "jest --passWithNoTests --ci"
+  },
+  "keywords": ["angola", "bodiva", "cmc", "sdvm", "fintech", "trading"],
+  "license": "PROPRIETARY",
+  "dependencies": {
+    "express": "^4.19.2",
+    "pg": "^8.11.5",
+    "jsonwebtoken": "^9.0.2",
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.4.5",
+    "cors": "^2.8.5",
+    "helmet": "^7.1.0",
+    "morgan": "^1.10.0",
+    "winston": "^3.13.0",
+    "uuid": "^9.0.1",
+    "zod": "^3.23.8",
+    "express-rate-limit": "^7.2.0",
+    "ws": "^8.16.0",
+    "decimal.js": "^10.4.3"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.0",
+    "supertest": "^6.3.4"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
