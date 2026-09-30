@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-AO">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>SDVM Angola · Corretora Digital MVP</title>
+<meta name="description" content="Protótipo funcional de SDVM para o mercado de capitais angolano (BODIVA). Apresentação a investidores e à CMC."/>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  .gradient-hero { background: linear-gradient(135deg, #0a0e27 0%, #1a1f4e 50%, #0f172a 100%); }
+  .glass { background: rgba(255,255,255,0.04); backdrop-filter: blur(12px); border: 1px solid rgba(255,255,255,0.08); }
+  .glow { box-shadow: 0 0 60px rgba(245,158,11,0.15); }
+  .card-hover { transition: all .3s ease; }
+  .card-hover:hover { transform: translateY(-4px); border-color: rgba(245,158,11,0.4); }
+</style>
+</head>
+<body class="gradient-hero text-white min-h-screen">
+
+<!-- HERO -->
+<section class="max-w-6xl mx-auto px-6 pt-16 pb-12">
+  <div class="flex items-center gap-4 mb-10">
+    <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-amber-400 to-red-600 flex items-center justify-center font-black text-black text-xl">SD</div>
+    <div>
+      <h1 class="text-2xl font-bold">SDVM Angola</h1>
+      <p class="text-xs text-gray-400">Corretora Digital & Distribuidora de Valores Mobiliários · BODIVA</p>
+    </div>
+  </div>
+
+  <div class="mb-4">
+    <span class="text-xs px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-400 border border-emerald-500/30">
+      ● MVP DEMO · Pronto para avaliação
+    </span>
+  </div>
+
+  <h2 class="text-5xl md:text-6xl font-black leading-tight mb-6">
+    O mercado de capitais<br/>
+    <span class="bg-gradient-to-r from-amber-400 to-red-500 bg-clip-text text-transparent">ao alcance de todos os angolanos.</span>
+  </h2>
+
+  <p class="text-lg text-gray-400 max-w-3xl mb-10">
+    Protótipo funcional de uma Sociedade Distribuidora de Valores Mobiliários (SDVM) com onboarding digital,
+    custódia automatizada via CEVAMA, liquidação instantânea via Kwik (BNA) e negociação em tempo real na BODIVA.
+  </p>
+
+  <div class="flex flex-wrap gap-3">
+    <a href="retail-dashboard.html" class="px-6 py-3 rounded-xl bg-amber-500 hover:bg-amber-400 text-black font-bold transition">
+      👤 Vista do Investidor
+    </a>
+    <a href="trading-terminal.html" class="px-6 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 font-bold transition">
+      📈 Mesa de Negociação
+    </a>
+    <a href="executive-dashboard.html" class="px-6 py-3 rounded-xl glass hover:bg-white/10 font-bold transition">
+      📊 Painel Executivo (Investidores)
+    </a>
+  </div>
+</section>
+
+<!-- KPIs -->
+<section class="max-w-6xl mx-auto px-6 pb-12">
+  <div class="grid md:grid-cols-4 gap-4">
+    <div class="glass rounded-2xl p-6">
+      <p class="text-xs text-gray-400 uppercase tracking-wider">Modelo de Receita</p>
+      <p class="text-3xl font-black mt-2 text-amber-400">3</p>
+      <p class="text-xs text-gray-500 mt-1">Float · Corretagem · Custódia</p>
+    </div>
+    <div class="glass rounded-2xl p-6">
+      <p class="text-xs text-gray-400 uppercase tracking-wider">Integrações Locais</p>
+      <p class="text-3xl font-black mt-2 text-emerald-400">4</p>
+      <p class="text-xs text-gray-500 mt-1">EMIS · Kwik · CEVAMA · BODIVA</p>
+    </div>
+    <div class="glass rounded-2xl p-6">
+      <p class="text-xs text-gray-400 uppercase tracking-wider">Conformidade</p>
+      <p class="text-3xl font-black mt-2 text-blue-400">CMC</p>
+      <p class="text-xs text-gray-500 mt-1">Auditoria imutável + Separação patrimonial</p>
+    </div>
+    <div class="glass rounded-2xl p-6">
+      <p class="text-xs text-gray-400 uppercase tracking-wider">Time to Market</p>
+      <p class="text-3xl font-black mt-2 text-purple-400">6m</p>
+      <p class="text-xs text-gray-500 mt-1">Do MVP à licença CMC</p>
+    </div>
+  </div>
+</section>
+
+<!-- DASHBOARDS -->
+<section class="max-w-6xl mx-auto px-6 pb-16">
+  <h3 class="text-2xl font-bold mb-6">Explore os três ambientes do MVP</h3>
+  <div class="grid md:grid-cols-3 gap-6">
+
+    <a href="retail-dashboard.html" class="glass rounded-2xl p-6 card-hover block">
+      <div class="text-4xl mb-3">👤</div>
+      <h4 class="text-lg font-bold mb-2">Investidor de Retalho</h4>
+      <p class="text-sm text-gray-400 mb-4">
+        Compra de acções com um clique, extrato em Kwanzas, saldo a render (Float) e depósito via Multicaixa Express.
+      </p>
+      <span class="text-xs text-amber-400 font-semibold">Abrir dashboard →</span>
+    </a>
+
+    <a href="trading-terminal.html" class="glass rounded-2xl p-6 card-hover block">
+      <div class="text-4xl mb-3">📈</div>
+      <h4 class="text-lg font-bold mb-2">Mesa de Negociação</h4>
+      <p class="text-sm text-gray-400 mb-4">
+        Terminal profissional estilo MetaTrader: gráficos, DOM, Time & Sales, ordens em tempo real via WebSocket.
+      </p>
+      <span class="text-xs text-emerald-400 font-semibold">Abrir terminal →</span>
+    </a>
+
+    <a href="executive-dashboard.html" class="glass rounded-2xl p-6 card-hover block">
+      <div class="text-4xl mb-3">📊</div>
+      <h4 class="text-lg font-bold mb-2">Painel Executivo</h4>
+      <p class="text-sm text-gray-400 mb-4">
+        Métricas de rentabilidade: juros líquidos do Float, comissões de corretagem, conformidade CMC.
+      </p>
+      <span class="text-xs text-blue-400 font-semibold">Abrir painel →</span>
+    </a>
+
+  </div>
+</section>
+
+<!-- PROPOSTA DE VALOR -->
+<section class="max-w-6xl mx-auto px-6 pb-16">
+  <h3 class="text-2xl font-bold mb-6">Porquê Angola, porquê agora</h3>
+  <div class="grid md:grid-cols-2 gap-6">
+    <div class="glass rounded-2xl p-6">
+      <h4 class="font-bold text-amber-400 mb-3">🎯 O problema</h4>
+      <ul class="space-y-2 text-sm text-gray-300">
+        <li>• <b>&lt; 1%</b> da população tem acesso a investimento em bolsa</li>
+        <li>• Custos de custódia e corretagem elevados (bancos tradicionais)</li>
+        <li>• Liquidação T+2 desincentiva o retalho</li>
+        <li>• Onboarding presencial (KYC) inviabiliza escala</li>
+      </ul>
+    </div>
+    <div class="glass rounded-2xl p-6">
+      <h4 class="font-bold text-emerald-400 mb-3">💡 A solução SDVM</h4>
+      <ul class="space-y-2 text-sm text-gray-300">
+        <li>• Onboarding 100% digital (NIF + Multicaixa)</li>
+        <li>• Custódia automatizada via CEVAMA (NRC em minutos)</li>
+        <li>• Liquidação instantânea via Kwik (BNA)</li>
+        <li>• Corretagem transparente de 0,5% + Float a render</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- COMO CORRER -->
+<section class="max-w-6xl mx-auto px-6 pb-20">
+  <div class="glass rounded-2xl p-8">
+    <h3 class="text-xl font-bold mb-4">🚀 Correr localmente em 3 comandos</h3>
+    <pre class="bg-black/60 rounded-xl p-4 text-sm text-emerald-400 overflow-x-auto"><code>git clone https://github.com/sua-org/sdvm-angola.git
+cd sdvm-angola
+docker compose up</code></pre>
+    <p class="text-sm text-gray-400 mt-4">
+      Em 30 segundos terá: API em <code class="text-amber-400">:3000</code>, frontend em <code class="text-amber-400">:8080</code>,
+      PostgreSQL pré-carregado com dados de demonstração.
+    </p>
+  </div>
+</section>
+
+<footer class="border-t border-white/5 py-8 text-center text-xs text-gray-500">
+  © 2025 SDVM Angola · MVP para avaliação por investidores e CMC · Registo Corretora nº SDVM/2025/017
+</footer>
+
+</body>
+</html>
